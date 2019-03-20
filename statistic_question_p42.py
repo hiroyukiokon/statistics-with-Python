@@ -1,46 +1,42 @@
-#ステップ１
-data=[6,4,6,6,6,3,7,2,2,8]
-x=0
-for i in data:
-    x=x+i
-print(x)
 
-l=len(data)
-mean = x/l
-print(mean)
+#1
+a = [6,4,6,6,6,3,7,2,2,9,12]
 
+b = 0
+for i in a:
+    b = b + i
 
-#
+print(b)
 
-deviation=[]
+c = len(a)
+d = b/c
+print(d)
 
-for i in data:
-    deviation.append(i-mean)
+#2
+e = []
 
-print(deviation)
+for cg in a:
 
-
-#
-square=[]
-
-for i in deviation:
-    square.append(i**2)
-
-print(square)
-
-#
-standarddeviation=[]
-
-f=0
-for i in square:
-    f=f+i
-print(f)
-
-l=len(square)
-sd =f/l
-print(standarddeviation)
-
-
-G=(standarddeviation**0.5)
-print(G)
+    e.append(cg - d)
     
+print(e)
+
+#3
+f = []
+for t in e:
+    f.append(t**2)
+
+print (f)
+
+u = 0
+for z in f:
+    u = u + z
+
+print(u)
+
+gg = u/c ### gg is ***
+print(gg)
+    
+#4
+ggg = gg**0.5 ### 
+print(ggg)
