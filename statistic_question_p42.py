@@ -1,4 +1,4 @@
-##### calculation of standard devoation #####
+##### calculation of standard devoation #### #
 
 
 data = [6, 4, 6, 6, 6, 3, 7, 2, 2, 8]
