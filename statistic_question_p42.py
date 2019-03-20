@@ -1,47 +1,46 @@
-##### calculation of standard devoation #### #
-
-
-data = [6, 4, 6, 6, 6, 3, 7, 2, 2, 8]
-
-deviation = []
-deviation2 = []
-
-
-s = 0
-v = 0
-
-for n in data:
-    s += n
-    
-
-k = len(data)
-
-av = s/k 
-print(av)
-    
+#ステップ１
+data=[6,4,6,6,6,3,7,2,2,8]
+x=0
 for i in data:
-    l = i - av 
-    deviation.append(l) 
+    x=x+i
+print(x)
 
+l=len(data)
+mean = x/l
+print(mean)
+
+
+#
+
+deviation=[]
+
+for i in data:
+    deviation.append(i-mean)
 
 print(deviation)
 
-    
+
+#
+square=[]
+
 for i in deviation:
-    m = i**2
-    deviation2.append(m)
+    square.append(i**2)
 
-print(deviation2)
+print(square)
+
+#
+standarddeviation=[]
+
+f=0
+for i in square:
+    f=f+i
+print(f)
+
+l=len(square)
+sd =f/l
+print(standarddeviation)
 
 
-for i in deviation2:
-    v += i
-
-d = v/k
-
-print(d)
-
-sd = d**1/2
-
-print(sd)
-
+G=(standarddeviation**0.5)
+print(G)
+    
